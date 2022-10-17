@@ -9,7 +9,8 @@
     "preview": "vite preview",
     "test": "vitest",
     "prepare": "husky install",
-    "pretty-quick": "pretty-quick"
+    "pretty-quick": "pretty-quick",
+    "generate:icons": "npx @svgr/cli --typescript --out-dir ./src/components/Icons --ignore-existing -- ./src/assets/icons"
   },
   "dependencies": {
     "react": "^18.2.0",
@@ -19,6 +20,7 @@
   "devDependencies": {
     "@commitlint/cli": "^17.1.2",
     "@commitlint/config-conventional": "^17.1.0",
+    "@svgr/cli": "^6.5.0",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.3.0",
     "@types/react": "^18.0.21",
