@@ -1,3 +1,129 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .btn {
+    @apply relative flex items-center justify-center border-2 border-transparent transition ease-in-out;
+  }
+
+  /* btn sizes */
+  .btn-xxl {
+    @apply rounded-xl px-10 py-[13px] text-subtitle-3 font-semibold;
+  }
+
+  .btn-xl {
+    @apply rounded-[10px] px-8 py-[13px] text-subtitle-3 font-semibold;
+  }
+
+  .btn-lg {
+    @apply rounded-lg px-6 py-3 text-subtitle-3 font-normal;
+  }
+
+  .btn-md {
+    @apply rounded-lg px-4 py-3 text-body-3 font-normal;
+  }
+
+  .btn-sm {
+    @apply rounded-lg px-4 py-[10px] text-overline-1 font-normal;
+  }
+
+  /* btn black */
+  .btn-contained-black {
+    @apply border-neutral-800 bg-neutral-800 text-white hover:border-neutral-600 hover:bg-neutral-600 focus:border-neutral-600 focus:bg-neutral-600;
+  }
+
+  .btn-outlined-black {
+    @apply border-neutral-800 bg-transparent text-neutral-800 hover:border-neutral-600 hover:text-neutral-600 focus:border-neutral-600 focus:text-neutral-600;
+  }
+
+  .btn-link-black {
+    @apply bg-transparent text-xs font-normal text-neutral-800 hover:text-neutral-600 focus:text-neutral-600;
+  }
+
+  /* btn green */
+  .btn-contained-green {
+    @apply border-green-700 bg-green-700 text-white hover:border-green-500 hover:bg-green-500 focus:border-green-500 focus:bg-green-500;
+  }
+
+  .btn-outlined-green {
+    @apply border-green-700 bg-transparent text-green-700 hover:border-green-500 hover:text-green-500 focus:border-green-500 focus:text-green-500;
+  }
+
+  .btn-link-green {
+    @apply bg-transparent text-xs font-normal text-green-700 hover:text-green-500 focus:text-green-500;
+  }
+
+  /* btn blue */
+  .btn-contained-blue {
+    @apply border-blue-900 bg-blue-900 text-white hover:border-blue-600 hover:bg-blue-600 focus:border-blue-600 focus:bg-blue-600;
+  }
+
+  .btn-outlined-blue {
+    @apply border-blue-900 bg-transparent text-blue-900 hover:border-blue-600 hover:text-blue-600 focus:border-blue-600 focus:text-blue-600;
+  }
+
+  .btn-link-blue {
+    @apply bg-transparent text-xs font-normal text-blue-900 hover:text-blue-600 focus:text-blue-600;
+  }
+
+  /* btn red */
+  .btn-contained-red {
+    @apply border-red-900 bg-red-900 text-white hover:border-red-500 hover:bg-red-500 focus:border-red-500 focus:bg-red-500;
+  }
+
+  .btn-outlined-red {
+    @apply border-red-900 bg-transparent text-red-900 hover:border-red-500 hover:text-red-500 focus:border-red-500 focus:text-red-500;
+  }
+
+  .btn-link-red {
+    @apply bg-transparent text-xs font-normal text-red-900 hover:text-red-500 focus:text-red-500;
+  }
+
+  /* btn gray */
+  .btn-contained-gray {
+    @apply border-neutral-600 bg-neutral-600 text-white hover:border-neutral-400 hover:bg-neutral-400 focus:border-neutral-400 focus:bg-neutral-400;
+  }
+
+  .btn-outlined-gray {
+    @apply border-neutral-600 bg-transparent text-neutral-600 hover:border-neutral-400 hover:text-neutral-400 focus:border-neutral-400 focus:text-neutral-400;
+  }
+
+  .btn-link-gray {
+    @apply bg-transparent text-xs font-normal text-neutral-600 hover:text-neutral-400 focus:text-neutral-400;
+  }
+
+  /* btn light-gray */
+  .btn-contained-light-gray {
+    @apply border-neutral-300 bg-neutral-300 text-white hover:border-neutral-200 hover:bg-neutral-200 focus:border-neutral-200 focus:bg-neutral-200;
+  }
+
+  .btn-outlined-light-gray {
+    @apply border-neutral-300 bg-transparent text-neutral-300 hover:border-neutral-200 hover:text-neutral-200 focus:border-neutral-200 focus:text-neutral-200;
+  }
+
+  .btn-link-light-gray {
+    @apply bg-transparent text-xs font-normal text-neutral-300 hover:text-neutral-200 focus:text-neutral-200;
+  }
+
+  /* btn white */
+  .btn-contained-white {
+    @apply border-white bg-white text-neutral-900;
+  }
+
+  .btn-outlined-white {
+    @apply border-white bg-transparent text-white;
+  }
+
+  .btn-link-white {
+    @apply bg-transparent text-xs font-normal text-white;
+  }
+
+  .btn-block {
+    @apply w-full;
+  }
+
+  .btn[disabled] {
+    @apply cursor-not-allowed opacity-[0.2];
+  }
+}
