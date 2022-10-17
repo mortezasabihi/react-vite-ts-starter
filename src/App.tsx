@@ -1,4 +1,4 @@
-import { HashRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { Home, NotFound } from '@/pages';
 
 export function App() {
@@ -12,8 +12,8 @@ export function App() {
 
 export function WrappedApp() {
   return (
-    <HashRouter>
+    <Router>
       <App />
-    </HashRouter>
+    </Router>
   );
 }
