@@ -1,5 +1,11 @@
+import { Heading } from '@/components/Pages/Home';
+
 function Home() {
-  return <h1 className="text-heading-1 font-bold">Hello World</h1>;
+  return (
+    <div className="container mx-auto">
+      <Heading />
+    </div>
+  );
 }
 
 export default Home;
